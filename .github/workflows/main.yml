@@ -18,8 +18,8 @@ env:
       KEYCHAIN: ${{ 'temporary.keychain' }}
       DECRYPTED_CERT_FILE_PATH: ${{ '.github/secrets/cert.p12' }}
       ENCRYPTED_CERT_FILE_PATH: ${{ '.github/secrets/cert.p12.gpg' }}
-      DECRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/HoneyPotProvisioning.mobileprovision' }}
-      ENCRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/HoneyPotProvisioning.mobileprovision.gpg' }}
+      DECRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/action.mobileprovision' }}
+      ENCRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/action.mobileprovision.gpg' }}
       CERT_EXPORT_KEY: ${{ secrets.CERT_EXPORT_KEY }}
       CERT_ENCRYPTION_KEY: ${{ secrets.CERT_ENCRYPTION_KEY }}
       PROVISIONING_ENCRYPTION_KEY: ${{ secrets.PROVISIONING_ENCRYPTION_KEY }}
