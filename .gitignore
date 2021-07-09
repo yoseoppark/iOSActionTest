@@ -1,0 +1,10 @@
+*.xcuserstate
+distribution
+fastlane/report.xml
+
+myHyundai.xcodeproj/xcuserdata/seungpillbaik.xcuserdatad/xcschemes/xcschememanagement.plist
+Pods/Pods.xcodeproj/xcuserdata/seungpillbaik.xcuserdatad/xcschemes/xcschememanagement.plist
+
+*/xcschememanagement.plist
+Frameworks/PlayMapSDK.framework
+Breakpoints_v2.xcbkptlist
