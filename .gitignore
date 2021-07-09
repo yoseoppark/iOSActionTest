@@ -1,0 +1,8 @@
+*.xcuserstate
+distribution
+fastlane/report.xml
+
+*/xcschememanagement.plist
+xcschememanagement.plist
+Frameworks/PlayMapSDK.framework
+Breakpoints_v2.xcbkptlist
