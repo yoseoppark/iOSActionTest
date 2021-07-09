@@ -10,7 +10,14 @@ on: [push]
   #pull_request:
   #  branches: [ main ]
 
-env:
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: macos-latest
+    
+    env:
       XC_VERSION: ${{ '11.6' }}
       XC_WORKSPACE: ${{ 'ActionTest.xcworkspace' }}
       XC_ARCHIVE: ${{ 'ActionTest.xcarchive' }}
@@ -22,14 +29,7 @@ env:
       ENCRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/action.mobileprovision.gpg' }}
       CERT_EXPORT_KEY: ${{ secrets.CERT_EXPORT_KEY }}
       CERT_ENCRYPTION_KEY: ${{ secrets.CERT_ENCRYPTION_KEY }}
-      PROVISIONING_ENCRYPTION_KEY: ${{ secrets.PROVISIONING_ENCRYPTION_KEY }}
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: macos-latest
+      PROVISIONING_ENCRYPTION_KEY: ${{ secrets.PROVISIONING_ENCRYPTION_KEY }}    
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
