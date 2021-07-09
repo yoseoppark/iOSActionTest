@@ -18,7 +18,7 @@ jobs:
     runs-on: macos-latest
     
     env:
-      XC_VERSION: ${{ '11.6' }}
+      XC_VERSION: ${{ '11.4.1' }}
       XC_WORKSPACE: ${{ 'ActionTest.xcworkspace' }}
       XC_ARCHIVE: ${{ 'ActionTest.xcarchive' }}
       XC_SCHEME: ${{ 'ActionTest' }}
