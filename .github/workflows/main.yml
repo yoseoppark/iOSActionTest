@@ -24,8 +24,8 @@ jobs:
       XC_SCHEME: ${{ 'ActionTest' }}
       XC_CONFIGURATION: ${{'Automation'}}
       KEYCHAIN: ${{ 'temporary.keychain' }}
-      DECRYPTED_CERT_FILE_PATH: ${{ '.github/secrets/cert.p12' }}
-      ENCRYPTED_CERT_FILE_PATH: ${{ '.github/secrets/cert.p12.gpg' }}
+      DECRYPTED_CERT_FILE_PATH: ${{ '.github/secrets/HMC-enterprise-ys.p12' }}
+      ENCRYPTED_CERT_FILE_PATH: ${{ '.github/secrets/HMC-enterprise-ys.p12.gpg' }}
       DECRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/action.mobileprovision' }}
       ENCRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/action.mobileprovision.gpg' }}
       CERT_EXPORT_KEY: ${{ secrets.CERT_EXPORT_KEY }}
