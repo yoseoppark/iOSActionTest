@@ -22,6 +22,7 @@ jobs:
       XC_WORKSPACE: ${{ 'ActionTest.xcworkspace' }}
       XC_ARCHIVE: ${{ 'ActionTest.xcarchive' }}
       XC_SCHEME: ${{ 'ActionTest' }}
+      XC_CONFIGURATION: ${{'Automation'}}
       KEYCHAIN: ${{ 'temporary.keychain' }}
       DECRYPTED_CERT_FILE_PATH: ${{ '.github/secrets/cert.p12' }}
       ENCRYPTED_CERT_FILE_PATH: ${{ '.github/secrets/cert.p12.gpg' }}
