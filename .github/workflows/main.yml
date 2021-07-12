@@ -19,7 +19,7 @@ jobs:
     
     env:
       XC_VERSION: ${{ '11.4.1' }}
-      XC_WORKSPACE: ${{ 'ActionTest.xcworkspace' }}
+      XC_WORKSPACE: ${{ 'ActionTest.xcodeproj' }}
       XC_ARCHIVE: ${{ 'ActionTest.xcarchive' }}
       XC_SCHEME: ${{ 'ActionTest' }}
       KEYCHAIN: ${{ 'temporary.keychain' }}
