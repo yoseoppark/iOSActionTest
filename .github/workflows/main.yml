@@ -24,11 +24,6 @@ jobs:
       run: |
         npm install
 
-    - name: init cocoapods
-      run: cd ios && sudo gem install cocoapods && pod install
-    - name: show dir
-      run: cd ios && ls
-
     - uses: yukiarrr/ios-build-action@v1.4.0
       with:
         project-path: ActionTest.xcworkspace     
