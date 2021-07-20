@@ -19,26 +19,21 @@ jobs:
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-     - name: Checkout
-       uses: actions/checkout@v2    
-       with:
-         lfs: true
+    - uses: actions/checkout@v2
+    - name: Install npm dependencies
+      run: |
+        npm install
 
-     - name: Restore yarn cache
-       uses: c-hive/gha-yarn-cache@v1
+    - name: init cocoapods
+      run: cd ios && sudo gem install cocoapods && pod install
+    - name: show dir
+      run: cd ios && ls
 
-     - name: Install Dependencies
-       run: yarn install
-
-     - name: Install Pods
-       working-directory: ios
-       run: pod install --repo-update
-    
-     - uses: yukiarrr/ios-build-action@v1.4.0
-       with:
-         project-path: ActionTest.xcworkspace     
-         p12-base64: ${{ secrets.P12_BASE64 }}
-         mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
-         code-signing-identity: ${{ secrets.CODE_SIGNING_IDENTITY }}
-         team-id: ${{ secrets.TEAM_ID }}     
-#         workspace-path: ActionTest.xcodeproj
+    - uses: yukiarrr/ios-build-action@v1.4.0
+      with:
+        project-path: ActionTest.xcworkspace     
+        p12-base64: ${{ secrets.P12_BASE64 }}
+        mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
+        code-signing-identity: ${{ secrets.CODE_SIGNING_IDENTITY }}
+        team-id: ${{ secrets.TEAM_ID }}     
+#        workspace-path: ActionTest.xcodeproj
