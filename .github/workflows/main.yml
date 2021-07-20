@@ -19,9 +19,12 @@ jobs:
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+     - name: Checkout
+       uses: actions/checkout@v2    
+    
      - uses: yukiarrr/ios-build-action@v1.4.0
        with:
-         project-path: ./iOSActionTest/ActionTest.xcworkspace
+         project-path: ActionTest.xcworkspace
          p12-base64: ${{ secrets.P12_BASE64 }}
          mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
          code-signing-identity: ${{ secrets.CODE_SIGNING_IDENTITY }}
