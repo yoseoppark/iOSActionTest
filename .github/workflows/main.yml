@@ -21,9 +21,9 @@ jobs:
     steps:
      - uses: yukiarrr/ios-build-action@v1.4.0
        with:
-         project-path: ActionTest.xcodeproj
+         project-path: ./ActionTest.xcworkspace
          p12-base64: ${{ secrets.P12_BASE64 }}
          mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
          code-signing-identity: ${{ secrets.CODE_SIGNING_IDENTITY }}
          team-id: ${{ secrets.TEAM_ID }}     
-         workspace-path: ActionTest.xcodeproj
+#         workspace-path: ActionTest.xcodeproj
