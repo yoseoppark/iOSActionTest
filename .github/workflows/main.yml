@@ -24,6 +24,12 @@ jobs:
        with:
          lfs: true
 
+     - name: Restore yarn cache
+       uses: c-hive/gha-yarn-cache@v1
+
+     - name: Install Dependencies
+       run: yarn install
+
      - name: Install Pods
        working-directory: ios
        run: pod install --repo-update
