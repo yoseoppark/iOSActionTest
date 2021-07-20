@@ -32,6 +32,7 @@ jobs:
         code-signing-identity: ${{ secrets.CODE_SIGNING_IDENTITY }}
         team-id: ${{ secrets.TEAM_ID }}     
         configuration : Debug
+        export-method: enterprise
         workspace-path: ActionTest.xcworkspace
 
 
