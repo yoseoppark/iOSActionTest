@@ -30,7 +30,9 @@ jobs:
         p12-base64: ${{ secrets.P12_BASE64 }}
         mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
         code-signing-identity: ${{ secrets.CODE_SIGNING_IDENTITY }}
-        team-id: ${{ secrets.TEAM_ID }}     
+        team-id: ${{ secrets.TEAM_ID }}
         configuration : Release
         export-method: enterprise
         workspace-path: ActionTest.xcworkspace
+        certificate-password: ${{ secrets.CERT_PASSWORD }}
+
