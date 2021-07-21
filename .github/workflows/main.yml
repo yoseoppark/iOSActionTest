@@ -59,3 +59,4 @@ jobs:
           token: ${{secrets.FIREBASE_TOKEN}}
           groups: testers
           file: output.ipa        
+
