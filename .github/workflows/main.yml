@@ -24,6 +24,7 @@ jobs:
       run: |
         npm install
 
+
     - uses: yukiarrr/ios-build-action@v1.4.0
       with:
         project-path: ActionTest.xcodeproj
