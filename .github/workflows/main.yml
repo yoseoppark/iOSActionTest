@@ -35,5 +35,4 @@ jobs:
         export-method: enterprise
         workspace-path: ActionTest.xcworkspace
         certificate-password: ${{ secrets.CERT_PASSWORD }}
-        
 
